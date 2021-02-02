@@ -1,0 +1,523 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto
+}
+body #page {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    background-color: burlywood;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+a:active {
+    background-color: burlywood;
+}
+img {
+    border: none;
+}
+/*----------------------------------------header-styles---------------------------------------*/
+#header .nav{
+    margin: 20px;
+}
+ .navbar-brand {
+    font-size: 20px;
+    font-weight: 550;
+}
+.navbar-brand span{
+    font-family: 'Lobster', cursive;
+    color: salmon;
+}
+#header .navbar navbar-expand-sm bg-white{
+    background-color:salmon;
+}
+#header div a img.logo{
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    height: 70%;
+}
+.search-btn{
+	background-color: burlywood;
+	color: salmon;
+    align-content: center;
+    float: right;   
+}
+header nav{
+	background-color: brown;
+}
+header a{
+	color: salmon;
+    font-size:1.4rem;
+    text-align: center;
+}
+header a:hover{
+	background-color:darksalmon ;
+	color: brown;
+}
+header a.active{
+	background-color: salmon;
+	color: burlywood;
+}
+/** top nav **/
+
+#top-nav {
+	z-index:10000;
+	background-color:var(--main-color);
+	
+}
+#top-nav a{
+	color:var(--secondary-color);
+}
+#top-nav a:hover{
+	color:var(--secondary-color-hover);
+}
+
+.currency{
+	color:#43a047;
+}
+
+#top-nav .dropdown-menu text-center{
+	z-index:1000;	
+}
+/*----------------------------------------body-home-styles---------------------------------------*/
+#body.home {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+#body.home div.header {
+    background-color: brown;
+    margin: 0;
+    max-width: none;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+#body.home div.header img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+#body.home div.header div {
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 660px;
+    padding: 0;
+    position: relative;
+}
+#body.home div.header div a {
+    background: url(../images/icons.png) no-repeat 0 -128px;
+    color: burlywood;
+    display: block;
+    font-family: quicksand-bold-webfont;
+    font-size: 24px;
+    font-weight: normal;
+    height: 99px;
+    line-height: 24px;
+    margin: 0;
+    padding: 52px 0 0;
+    position: absolute;
+    right: 130px;
+    text-align: center;
+    text-transform: uppercase;
+    top: 437px;
+    width: 156px;
+    z-index: 90;
+}
+#register-form{
+    padding: 100px 0
+}
+#register-form h1{
+    color: brown;
+    margin-bottom: 30px;
+}
+#register-form input{
+   border-radius: 20px
+}
+#register-form label{
+    margin-left: 12px
+}
+#register-form .btn-resigter{
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+    color: brown;
+    background-color: salmon;
+    transition: all .4s ease-in; 
+}
+
+#register-form .btn-resigter:hover{
+    background-color: darksalmon
+}
+#register-form .agree{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px
+}
+
+#register-form .btn-login{
+    border: none;
+    color: brown;
+    padding: 10px;
+    background: salmon;
+    text-decoration: none
+}
+#register-form .btn-login:hover{
+    background: darksalmon;
+    transition: all .4s ease-in; 
+}
+
+#register-form .container{
+    width: 600px
+}
+
+#content {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh; 
+  }
+#categories{
+    padding: 70px 0;
+    font-size: 20px
+}
+#categories .example{
+    margin-bottom: 20px
+}
+#categories .example img{
+    width: 160px;
+    height: 160px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block
+}
+#categories .example span{
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+}
+#categories .example .price a{
+    color: #ff2020;
+    cursor: pointer;
+    margin-left: 5px;
+}
+#categories .example .price a:hover{
+    font-size: 22px
+}
+.best-selling{
+    padding: 70px 0;
+}
+.best-selling .h1{
+    font-size: 40px;
+    font-family:  'Raleway', sans-serif;
+    color: #000;
+    font-weight: bold;
+}
+.best-selling p{
+    margin-bottom: 50px;
+    color: #777;
+    font-size: 16px;
+}
+
+.best-selling .content {
+    border-bottom: 3px solid #ff2020;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.best-selling .content::before{
+    content: '\f004';
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 100;
+    font-size: 35px;
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #333;
+    opacity: 0;
+    background: transparent;
+    transition: .5s
+}
+.best-selling .content:hover::before{
+   opacity: .7
+}
+.best-selling .content img{
+    width: 100%;
+}
+.best-selling .content h3{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    background: #ff2020;
+    margin: 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    transform:translate(0 , 100%);
+    transition: transform  .4s  ease-in ;
+    
+}
+.best-selling .content .btn-cart{padding: 10px}
+.best-selling .content:hover h3{
+    transform:translate(0 , 0);
+}
+.best-selling .details{
+    margin-top: 20px
+}
+.best-selling .details p{
+    color: #ff2020;
+    font-size: 20px;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+.best-selling .details .product-name{
+    color: #444444;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 3px;
+}
+.best-selling button{
+    text-transform: uppercase;
+    color: #fff;
+    background: #ff2020;
+    padding: 20px 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+.best-selling button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #4a4a4b;
+    z-index: -1;
+    transition: all .4s ease-in; 
+}
+.best-selling button:hover::before{width: 100%;}
+
+.best-selling .disabled{
+    display: none
+}
+
+@media (max-width: 992px) {
+    .text-center{
+        text-align: left
+    }
+}  
+/*----------------------------------------footer-styles---------------------------------------*/
+#footer .contact-us .contact-content i{
+    font-size: 20px;
+    margin-right: 3px
+}
+#footer .contact-us .contact-content h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    display: inline-block;
+}
+#footer .contact-us .contact-content{
+    color: brown;
+    font-weight: bold;
+    font-size: 25px;
+    float: left;
+    margin: 0 10px 0 0;
+    max-width: none;
+    padding: 0 0 61px 40px;
+    width: 590px;
+    display: block;
+}
+.contact h1 {
+    color: brown;
+    float: left;
+    font-family: lato-regular-webfont;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+    padding: 15px 0 4px;
+    text-align: left;
+    width: 510px;
+}
+.contact form {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 560px;
+    float: center;
+}
+.contact form input {
+    background: none;
+    border: 1px solid #B6ADB0;
+    color: blueviolet;
+    display: block;
+    font-family: lato-regular-webfont;
+    font-size: 14px;
+    font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 0 8px;
+    padding: 0 0 0 10px;
+    text-align: left;
+    width: 548px;
+}
+.contact form input#submit {
+    background: none;
+    border: 2px solid #c5abb4;
+    color: brown;
+    cursor: pointer;
+    display: block;
+    font-family: lato-bold-webfont;
+    font-size: 16px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 141px;
+}
+.contact form input#submit:hover {
+    background-color: yellow;
+    border: none;
+    height: 40px;
+    width: 141px;
+}
+.section h1 {
+    color: brown;
+    display: block;
+    font-family: lato-regular-webfont;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 auto;
+    padding: 24px 0 27px;
+    text-align: center;
+    width: 202px;
+}
+footer {
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+footer div{
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+footer div p {
+    color: brown;
+    display: block;
+    font-family: roboto-regular-webfont;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 15px;
+    margin: 0;
+    padding: 33px 0 50px;
+    text-align: center;
+    text-transform: none
+}
+footer div .connect {
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    max-width: none;
+    overflow: hidden;
+    padding: 0;
+    width: 240px;
+}
+#footer div .connect a {
+    color: brown;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    margin: 10px;
+    padding: 0;
+    align-content: center;
+    text-align: center;
+    width: 30px;
+}
+#footer div .connect a.facebook {
+    background-position: 0 0;
+}
+#footer div .connect a.googleplus {
+    background-position: 0 -32px;
+}
+#footer div .connect a.pinterest {
+    background-position: 0 -64px;
+}
+#footer div .connect a.twitter {
+    background-position: 0 -96px;
+}
+.footer{
+    padding:100px 0;
+    background-color: burlywood;
+}
+.footer .logo-footer a{
+    color: darksalmon;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-decoration: none
+}
+.footer .logo-footer span{
+    font-family: 'Lobster', cursive;
+    color: salmon;
+}
+.footer .quick-link-footer h3{
+    font-family: 'Raleway', sans-serif;
+    color: salmon;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+.footer .quick-link-footer li{padding-bottom: 20px}
+.footer .quick-link-footer a{
+    color: brown;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    transition: .4s
+}
+.footer .quick-link-footer li:hover a{
+    color: salmon;
+    padding-left: 10px
+}
+/*Start Media for Footer */
+@media (max-width: 768px) 
+{
+    .footer{
+        padding: 30px
+    }
+}
